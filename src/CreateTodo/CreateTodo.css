@@ -1,0 +1,19 @@
+.createTodo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 30px;
+    color: #ffff;
+    position: absolute;
+    right: -7px;
+    bottom: -18px;
+    background: rgb(34, 195, 140);
+    background: linear-gradient(58deg, rgba(34, 195, 140, 1) 0%, rgba(144, 45, 253, 1) 100%);
+}
+
+.createTodo:hover {
+    cursor: pointer;
+    scale: 1.02;
+    filter: brightness(1.2);
+}

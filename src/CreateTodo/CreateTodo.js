@@ -1,9 +1,10 @@
 import React from 'react'
+import './CreateTodo.css'
 
 function CreateTodo() {
     return (
-        <button> + </button>
+        <button className='createTodo' onClick={() => console.log('le diste click')}> + </button>
     )
 }
 
-export {CreateTodo} 
+export { CreateTodo } 
