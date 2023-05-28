@@ -16,7 +16,7 @@
 .tasks:hover{
     scale: 1.02;
 }
-.check{
+.icon{
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -29,19 +29,6 @@
 .check--active{
     color: #64b83d;
 }
-.remove{
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    font-weight: 800;
-    font-size: 20px;
-    /* background-color: #c7c7c7;    */
-}
-.remove:hover{
-    color: #da3535;
-}
 .p{
     text-decoration: none;
     font-weight: 500;
@@ -50,4 +37,11 @@
     text-decoration: line-through;
     font-style: italic;
     opacity: .8;
+}
+.icon-svg{
+    width: 24px;
+    height: 24px;
+}
+.remove:hover .icon-svg{
+    fill: #da3535;
 }
