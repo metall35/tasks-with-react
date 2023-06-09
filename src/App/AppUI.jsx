@@ -7,19 +7,20 @@ import { CreateTodo } from "../CreateTodo";
 import { Loading } from "../Loading";
 
 function AppUI({
-    loading,
-    error,
-    completedTodo, 
-    totalTodos, 
-    setSearchValue, 
-    SearchValue, 
-    searchedTodo, 
-    completeTodo, 
-    deleteTodo }) {
+    // loading,
+    // error,
+    // completedTodo,
+    // totalTodos,
+    // setSearchValue,
+    // SearchValue,
+    // searchedTodo,
+    // completeTodo,
+    // deleteTodo
+    }) {
     return (
         <div className="container">
-            <TodoCounter completed={completedTodo} total={totalTodos} />
-            <TodoSearch setSearchValue={setSearchValue} SearchValue={SearchValue} />
+            <TodoCounter  />
+            <TodoSearch />
             <TodoList>
                 {loading && <Loading />}
                 {error && <p>Calmao, hubo un error!!</p>}
@@ -39,4 +40,4 @@ function AppUI({
     );
 }
 
-export {AppUI}
+export { AppUI }
