@@ -1,5 +1,6 @@
 import React from "react";
 import { AppUI } from './AppUI'
+import { TodoProvider } from "../Context";
 
 // localStorage.removeItem('TODOS_V1');
 
@@ -14,7 +15,9 @@ import { AppUI } from './AppUI'
 // localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
 function App() {
   return (
-    <AppUI />
+    <TodoProvider>
+      <AppUI />
+    </TodoProvider>
   );
 }
 
