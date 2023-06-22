@@ -14,7 +14,8 @@ textarea{
     padding: 10px 12px;
     border-radius: 12px;
     text-align: center;
-    width: 80%;
+    height: 149px; 
+    width: 267px;
 }
 form .button-container{
     display: flex;
