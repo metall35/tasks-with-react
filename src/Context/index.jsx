@@ -17,7 +17,17 @@ function TodoProvider({ children }) {
         const searchText = SearchValue.toLowerCase();
         return todoText.includes(searchText);
     });
-    const [openModal, setOpenModal] = React.useState(true)
+    const [openModal, setOpenModal] = React.useState(false)
+
+    const addTodo = (text) =>{
+        const newTodos = [...todos]
+        newTodos.push({
+            text,
+            completed: false,
+        })
+        savetodos(newTodos)
+    }
+
     const completeTodo = (text) => {
         const newTodos = [...todos]
         const todoindex = newTodos.findIndex((todo) => todo.text === text)
@@ -42,7 +52,8 @@ function TodoProvider({ children }) {
             completeTodo,
             deleteTodo,
             setOpenModal,
-            openModal
+            openModal,
+            addTodo
         }}>
             {children}
         </TodoContext.Provider>

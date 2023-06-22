@@ -1,0 +1,37 @@
+form{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+background: #ffff;
+border-radius: 12px;
+height: auto;
+margin: 14px;
+padding: 18px 20px;
+gap: 18px;
+}
+textarea{
+    padding: 10px 12px;
+    border-radius: 12px;
+    text-align: center;
+    width: 80%;
+}
+form .button-container{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.ButtonForm{
+    padding: 8px 10px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #85858567;
+}
+.button-cancelar:hover{
+    background-color: #ff0000cb;
+    color: #fff;
+}
+.button-enviar:hover{
+    background-color: #26ffbe;
+}

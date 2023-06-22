@@ -7,6 +7,7 @@
     color: #ffff;
     position: absolute;
     right: -7px;
+    z-index: 1;
     bottom: -18px;
     background: rgb(34, 195, 140);
     background: linear-gradient(58deg, rgba(34, 195, 140, 1) 0%, rgba(144, 45, 253, 1) 100%);
